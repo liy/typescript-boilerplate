@@ -1,0 +1,28 @@
+{
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "dist"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist",
+    // "react" will convert react component to real react API calls.
+    // This is because ts-loader is handling all the transpile, which gives type errors
+    // "preserve" is only useful when using babel for transpile.
+    "jsx": "react",
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "module": "ESNext",
+    "sourceMap": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "checkJs": false,
+    "paths": {}
+  }
+}
