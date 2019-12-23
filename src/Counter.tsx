@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 interface Props {
   initialValue: number;
   disabled: boolean;
+  what: number;
   interval?: number;
 }
 
@@ -13,9 +14,12 @@ function branch() {
 const Counter = ({ initialValue }: Props) => {
   if (initialValue < -1) {
     branch();
+    return null;
   }
 
-  return <div>{initialValue}</div>;
+  const [value] = useState(0);
+
+  return <div>{value}</div>;
 };
 
 export default Counter;

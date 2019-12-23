@@ -12,11 +12,6 @@ module.exports = {
   plugins: ["react", "react-hooks", "prettier"],
   rules: {
     "prettier/prettier": "error",
-    "react/jsx-filename-extension": "off",
-    "react/jsx-one-expression-per-line": "off",
-    "react/prop-types": "off",
-    "react/jsx-indent": "off",
-    "react/jsx-indent-props": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
   },
@@ -38,6 +33,7 @@ module.exports = {
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:react/recommended",
         "prettier/@typescript-eslint",
         "prettier"
@@ -45,6 +41,9 @@ module.exports = {
       plugins: ["react", "react-hooks", "@typescript-eslint", "prettier"],
       rules: {
         "@typescript-eslint/explicit-function-return-type": "off"
+      },
+      parserOptions: {
+        project: "./tsconfig.json"
       }
     }
   ]
