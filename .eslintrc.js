@@ -23,6 +23,11 @@ module.exports = {
     // whitelist the environment variable provided by jest
     "jest/globals": true
   },
+  settings: {
+    react: {
+      version: require("./package.json").dependencies.react
+    }
+  },
 
   // TypeScript overrides
   overrides: [

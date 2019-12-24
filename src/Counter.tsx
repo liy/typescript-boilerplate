@@ -17,9 +17,9 @@ const Counter = ({ initialValue }: Props) => {
     return null;
   }
 
-  const [value] = useState(0);
+  // const [value] = useState(0);
 
-  return <div>{value}</div>;
+  return <div>{initialValue}</div>;
 };
 
 export default Counter;
