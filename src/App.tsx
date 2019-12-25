@@ -1,15 +1,10 @@
 import React from "react";
-import Counter from "./Counter";
+import Counter from "./components/Counter";
 
 const App = () => {
   return (
     <div>
-      <Counter
-        initialValue={10}
-        disabled={false}
-        interval={2000}
-        what={1}
-      ></Counter>
+      <Counter initialValue={10} disabled={false}></Counter>
     </div>
   );
 };

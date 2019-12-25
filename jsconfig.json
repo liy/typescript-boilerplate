@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "ES6",
+    "baseUrl": "./",
+    "paths": {
+      "customRender": ["testUtils/customRender"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

@@ -18,7 +18,10 @@ module.exports = {
   clearMocks: true,
 
   // Indicates whether the coverage information should be collected while executing the test
-  collectCoverage: true,
+  // !Note that source map generated will only for coverage, will not map correctly
+  // !for normal source code. Turn it off when debugging non-test source code.
+  // !https://intellij-support.jetbrains.com/hc/en-us/community/posts/360004708619-TypeScript-and-Jest-debugger-stops-only-on-breakpoints-in-tests-never-in-source-files
+  collectCoverage: false,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   // collectCoverageFrom: [],
@@ -67,9 +70,7 @@ module.exports = {
   },
 
   // An array of directory names to be searched recursively up from the requiring module's location
-  // moduleDirectories: [
-  //   "node_modules"
-  // ],
+  moduleDirectories: ["node_modules", "testUtils"],
 
   // An array of file extensions your modules use
   // moduleFileExtensions: [

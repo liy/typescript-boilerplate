@@ -38,7 +38,6 @@ module.exports = {
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:react/recommended",
         "prettier/@typescript-eslint",
         "prettier"
@@ -46,9 +45,6 @@ module.exports = {
       plugins: ["react", "react-hooks", "@typescript-eslint", "prettier"],
       rules: {
         "@typescript-eslint/explicit-function-return-type": "off"
-      },
-      parserOptions: {
-        project: "./tsconfig.json"
       }
     }
   ]
