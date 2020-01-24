@@ -14,7 +14,7 @@ describe("Counter", () => {
     mockedAxios.get.mockResolvedValue({ data: "mocked" });
 
     const { getByLabelText } = render(
-      <Counter initialValue={3} disabled={false}></Counter>
+      <Counter what={3} initialValue={3} disabled={false}></Counter>
     );
 
     const input = await waitForElement(() => getByLabelText("mocked"));

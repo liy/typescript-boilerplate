@@ -4,7 +4,7 @@ import Counter from "./components/Counter";
 const App = () => {
   return (
     <div>
-      <Counter initialValue={10} disabled={false}></Counter>
+      <Counter what={2} initialValue={10} disabled={false}></Counter>
     </div>
   );
 };
