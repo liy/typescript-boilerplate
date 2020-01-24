@@ -86,7 +86,11 @@ module.exports = {
   modulePaths: ["<rootDir>/src/__mocks__"],
 
   // A map from regular expressions to module names that allow to stub out resources with a single module
-  // moduleNameMapper: {},
+  moduleNameMapper: {
+    "testUtils/(.*)$": "<rootDir>/testUtils/$1",
+    factories: "<rootDir>/testUtils/factories",
+    customRender: "<rootDir>/testUtils/customRender"
+  },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],

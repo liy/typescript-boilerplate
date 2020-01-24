@@ -24,6 +24,8 @@
     "noImplicitAny": true,
     "checkJs": false,
     "paths": {
+      "testUtils/*": ["testUtils/*"],
+      "factories": ["testUtils/factories"],
       "customRender": ["testUtils/customRender"]
     }
   }
